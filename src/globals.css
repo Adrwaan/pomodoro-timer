@@ -6,3 +6,12 @@
   background: url('/bg.jpg') no-repeat;
   background-size: cover;
 }
+
+main#main {
+  background-color: #ffffff22;
+  box-shadow: 0 0px 28px 0 rgba(255,255,255, 0.2);
+}
+
+.opacity-border{
+  border-color: #ffffff44;
+}
