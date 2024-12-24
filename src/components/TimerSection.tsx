@@ -5,7 +5,7 @@ import { Button } from "./Button";
 import Timer from "../core/Timer";
 import { useCallback, useEffect, useState } from "react";
 
-const timer = new Timer(10, 0);
+const timer = new Timer(0, 25);
 let isPlaying = false;
 
 function setLongBreak() {
@@ -34,7 +34,6 @@ export default function TimerSection({ className }: { className?: string }) {
         timer.decreaseOneSecond();
         setSeconds(timer.seconds);
         setMinutes(timer.minutes);
-        console.log(timer.studySecQtd);
       } else {
         timer.decreaseOneSecond();
         setSeconds(timer.seconds);
@@ -66,16 +65,16 @@ export default function TimerSection({ className }: { className?: string }) {
     <Container className={className ? className : "w-full"}>
       <ContainerTitle>Timer</ContainerTitle>
       <div className="flex flex-col w-full h-full items-center px-2 py-3 gap-y-6">
-        <div className="flex w-full h-full justify-between items-center px-3">
+        <div className="flex w-full h-full justify-between lg:justify-around items-center px-3">
           <FaPlay
-            className="hover:cursor-pointer hover:text-gray-400 text-gray-200 transition-colors duration-200 size-4 sm:size-6 md:size-4"
+            className="select-none hover:cursor-pointer hover:text-gray-400 text-gray-200 transition-colors duration-200 size-4 sm:size-6 md:size-4 lg:size-8"
             onClick={() => (isPlaying = true)}
           />
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-200 ">{`${
             minutes < 10 ? `0${minutes}` : minutes
           }:${seconds < 10 ? `0${seconds}` : seconds}`}</h3>
           <FaPause
-            className="hover:cursor-pointer hover:text-gray-400 text-gray-200 transition-colors duration-200 size-4 sm:size-6 md:size-4"
+            className="select-none hover:cursor-pointer hover:text-gray-400 text-gray-200 transition-colors duration-200 size-4 sm:size-6 md:size-4 lg:size-8"
             size={30}
             onClick={() => (isPlaying = false)}
           />
