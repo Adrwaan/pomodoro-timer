@@ -19,7 +19,7 @@ O projeto utiliza **React** para a construção da interface interativa, **Tailw
 
 ### 💻 Captura de Tela
 
-![Desktop screenshot](./images/desktop-screenshot.png)
+![Desktop screenshot](./images/image1.png)
 
 ---
 
