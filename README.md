@@ -81,7 +81,6 @@ O projeto utiliza **React** para a construção da interface interativa, **Tailw
 
 - **Timer Pomodoro**: Cronômetro para sessões de trabalho e intervalos de descanso.
 - **Controles Interativos**: Opções para iniciar, pausar e resetar o timer.
-- **Notificações de Término**: Alerta sonoro e visual quando um ciclo termina.
 - **Design Responsivo**: Layout adaptável a diferentes tamanhos de tela.
 - **Interface Estilizada**: Componentes UI modernos com ShadCN UI e TailwindCSS.
 
